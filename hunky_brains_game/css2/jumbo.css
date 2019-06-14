@@ -1,0 +1,94 @@
+.form__link {
+  transition: all .25s ease;
+  -moz-transition:all .25 ease;
+}
+/* Fallback for hidden attribute for older browsers - IE9 and lower */
+
+hidden {display: none;}
+.flipper__checkbox:checked + .form__container {transform: rotateY(0deg);
+-moz-transform: rotateY(0deg);
+}
+.form__container {
+  transform-style: preserve-3d;
+  transition: transform .25s ease;
+  -moz-transform-style:preserve-3d;
+  -moz-transition:transform .25s ease;
+}
+.form__login,
+.form__signup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+}
+#form2
+{
+  display: none;
+}
+.form__login {
+  z-index: 2;
+  padding: 2rem;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  -moz-transform:rotateY(0deg);
+}
+.form__signup {
+  padding: 2rem;
+  transform: rotateY(0deg);
+  -moz-transform:rotateY(0deg);
+}
+/**
+ * Form default styling
+ */
+
+.checkbox--forget:checked + .icon--checkbox {
+  opacity: 1;
+  transform: scale(1);
+  -moz-transform: scale(1);
+}
+.form__link {
+  cursor: pointer;
+  &:focus,
+  &:hover {color: rgba($color--text,.95);}
+}
+#form1 , #form2{
+  padding:60px 40px;
+  margin-top:80px;
+  color:white;
+  -webkit-box-shadow: -5px 2px 62px 8px rgba(255,255,255,1);
+  -moz-box-shadow: -5px 2px 62px 8px rgba(255,255,255,1);
+  box-shadow: -5px 2px 62px 8px rgba(255,255,255,1);
+}
+h1{
+  color:white;
+  text-align: center;
+  margin-top: -10px;
+}
+button, #btn{
+  border:none;
+  outline: none;
+  height:35px;
+  color:#fff;
+  font-size: 17px;
+  font-weight: normal;
+  padding:6px;
+  width: 100%;
+  border-radius: 72px 72px 72px 72px;
+  -moz-border-radius: 72px 72px 72px 72px;
+  -webkit-border-radius: 72px 72px 72px 72px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: -5px 2px 62px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: -5px 2px 62px 8px rgba(0,0,0,0.75);
+  box-shadow: -5px 2px 62px 8px rgba(0,0,0,0.75);
+}
+#mess { color:red; }
+.btn{
+  text-decoration: none !important;
+/*  font-size: 1.5em;*/
+  color: white !important;
+ /* font-weight: bold;*/
+}
+.btn:hover{
+  color: red !important;
+}

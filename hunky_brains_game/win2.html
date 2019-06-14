@@ -1,0 +1,66 @@
+<html>
+<!-- The video --><head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+	#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.content {
+     position: absolute;
+    top:0;
+    bottom: 200;
+    left: 0;
+    right:500;
+    font-size: 3em;
+
+    margin: auto;
+   width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0);
+    color: #f1f1f1;
+   
+    padding: 20px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:rgba(0, 0, 0, 0);
+   color: white;
+   text-align: center;
+}
+#myBtn {
+   width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background:#800000 ;
+    color: white;
+    cursor: pointer;
+position: fixed;
+ left: 650;
+   
+}
+
+#myBtn:hover {
+    background: #ddd;
+    
+    color: black;
+}
+</style>	
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="winning2.mp4" type="video/mp4">
+</video>
+<div class="content">
+  <h1>Congatulations</h1> 
+ 	<a href="level3.html"><button id="myBtn" style="text-align:center" onclick="myFunction()">Next Level</button></a>
+</div>
+</body>
+</html>
